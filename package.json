@@ -9,9 +9,13 @@
   "author": "hazizu",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.8.0",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.0.0",
     "mongoose": "^9.0.0",
+    "multer": "^2.0.2",
     "nodemon": "^3.1.11"
   }
 }

@@ -5,4 +5,16 @@ const prestataireEfanicoController = require("../controllers/PrestataireEfanicoC
 // ➤ Ajouter un prestataire
 router.post("/", prestataireEfanicoController.createPrestataire);
 
+// ➤ Récupérer tous les prestataires
+router.get("/", prestataireEfanicoController.getAllPrestataires);
+
+// ➤ Récupérer un prestataire
+router.get("/:id", prestataireEfanicoController.getOnePrestataire);
+
+// ➤ Modifier un prestataire
+router.put("/:id", prestataireEfanicoController.updatePrestataire);
+
+// ➤ Supprimer un prestataire
+router.delete("/:id", prestataireEfanicoController.deletePrestataire);
+
 module.exports = router;

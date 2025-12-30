@@ -1,3 +1,4 @@
+
 const mongoose = require("mongoose");
 
 const presataireEfanicoSchema = new mongoose.Schema({
@@ -8,6 +9,11 @@ const presataireEfanicoSchema = new mongoose.Schema({
   communeOrQuarter: { type: String, required: true },
   ServiceDescription: { type: String, required: true },
   competences: { type: [String], required: true },
+
+    clothePrices: [{
+    clotheId: { type: mongoose.Schema.Types.ObjectId, ref: "ClotheFanico", required: true },
+    unitClothePrice: { type: Number, required: true }
+  }],
   fouchetteMin: { type: Number, required: true },
   fouchetteMax: { type: Number, required: true },
   availableDays: { type: [String], required: true },
